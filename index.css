@@ -212,7 +212,7 @@ img{
     box-sizing: border-box;
     border: 3px solid rgb(83, 16, 16);
     position: absolute;
-    left: 20%;
+    left: 22%;
     top: 110%;
     text-align: center;
 }
@@ -234,7 +234,4 @@ img{
 #pointTwo{
     top: 46%;
     color: red;
-}
-#p2{
-    display: none;
 }
