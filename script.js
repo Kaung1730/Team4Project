@@ -33,7 +33,7 @@ let randomDice = () =>{
     count++;
 }
 
-/*let playerOne = () =>{
+let playerOne = () =>{
     let currentPosition = 0;
     let currentDiceNum = randonNum+1;
     console.log(currentDiceNum);
@@ -180,7 +180,8 @@ case 20:
     break;
 case 21:
     document.getElementById("pointOne").style.left = "";
-    window.alert("15");
+    document.getElementById("pointOne").style.top = "-50px";
+    window.alert("21");
     break;
 case 22:
     document.getElementById("pointOne").style.left = "";
@@ -368,7 +369,7 @@ case 15:
     break;
     }
 }
-*/
+
 
 let playerTwo = () => {
     let currentPosition = 0;
