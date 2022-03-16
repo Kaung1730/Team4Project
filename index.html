@@ -4,9 +4,192 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snake Ladder</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    
+    <!-- <ion-icon name="golf-outline"></ion-icon> -->
+    <!-- Start Page Show -->
+    <div id="page-container">
+        <div class="page-text">
+            <div class="page-title">Snake & Ladder</div>
+            <div class="img-wrap">
+                <img src="./img/snakelogo.png" alt="logo">
+            </div>
+            <button id="play">PLAY</button>
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="score-container">
+        <div class="game-title">Snake & Ladder</div>
+        <div class="player">
+            <div class="player-one">
+                <ion-icon name="golf" class="pOne"></ion-icon>Player 1 :
+                <span id="p1score">0</span>
+            </div>
+            <div class="player-two">
+                <ion-icon name="golf" class="pTwo"></ion-icon></ion-icon>Player 2 :
+                <span id="p2score">0</span>
+            </div>
+        </div>
+    </div>
+    <!-- Board -->
+    <div id="board">
+        <table>
+            <tr>
+                <td id="100"></td>
+                <td id="99"></td>
+                <td id="98"></td>
+                <td id="97"></td>
+                <td id="96"></td>
+                <td id="95"></td>
+                <td id="94"></td>
+                <td id="93"></td>
+                <td id="92"></td>
+                <td id="91"></td>
+            </tr>
+            <tr>
+                <td id="81"></td>
+                <td id="82"></td>
+                <td id="83"></td>
+                <td id="84"></td>
+                <td id="85"></td>
+                <td id="86"></td>
+                <td id="87"></td>
+                <td id="88"></td>
+                <td id="89"></td>
+                <td id="90"></td>
+            </tr>
+            <tr>
+                <td id="80"></td>
+                <td id="79"></td>
+                <td id="78"></td>
+                <td id="77"></td>
+                <td id="76"></td>
+                <td id="75"></td>
+                <td id="74"></td>
+                <td id="73"></td>
+                <td id="72"></td>
+                <td id="71"></td>
+            </tr>
+            <tr>
+                <td id="61"></td>
+                <td id="62"></td>
+                <td id="63"></td>
+                <td id="64"></td>
+                <td id="65"></td>
+                <td id="66"></td>
+                <td id="67"></td>
+                <td id="68"></td>
+                <td id="69"></td>
+                <td id="70"></td>
+            </tr>
+            <tr>
+                <td id="60"></td>
+                <td id="59"></td>
+                <td id="58"></td>
+                <td id="57"></td>
+                <td id="56"></td>
+                <td id="55"></td>
+                <td id="54"></td>
+                <td id="53"></td>
+                <td id="52"></td>
+                <td id="51"></td>
+            </tr>
+            <tr>
+                <td id="41"></td>
+                <td id="42"></td>
+                <td id="43"></td>
+                <td id="44"></td>
+                <td id="45"></td>
+                <td id="46"></td>
+                <td id="47"></td>
+                <td id="48"></td>
+                <td id="49"></td>
+                <td id="50"></td>
+            </tr>
+            <tr>
+                <td id="40"></td>
+                <td id="39"></td>
+                <td id="38"></td>
+                <td id="37"></td>
+                <td id="36"></td>
+                <td id="35"></td>
+                <td id="34"></td>
+                <td id="33"></td>
+                <td id="32"></td>
+                <td id="31"></td>
+            </tr>
+            <tr>
+                <td id="21"></td>
+                <td id="22"></td>
+                <td id="23"></td>
+                <td id="24"></td>
+                <td id="25"></td>
+                <td id="26"></td>
+                <td id="27"></td>
+                <td id="28"></td>
+                <td id="29"></td>
+                <td id="30"></td>
+            </tr>
+            <tr>
+                <td id="20"></td>
+                <td id="19"></td>
+                <td id="18"></td>
+                <td id="17"></td>
+                <td id="16"></td>
+                <td id="15"></td>
+                <td id="14"></td>
+                <td id="13"></td>
+                <td id="12"></td>
+                <td id="11"></td>
+            </tr>
+            <tr>
+                <td id="1"></td>
+                <td id="2"></td>
+                <td id="3"></td>
+                <td id="4"></td>
+                <td id="5"></td>
+                <td id="6"></td>
+                <td id="7"></td>
+                <td id="8"></td>
+                <td id="9"></td>
+                <td id="10"></td>
+            </tr>
+        </table>
+    </div>
+    <!-- snake & ladder -->
+    <img src="./img/s1.png" alt="s1" class="s1">
+    <img src="./img/s1.png" alt="s1" class="s2">
+    <img src="./img/s1.png" alt="s1" class="s3">
+    <img src="./img/s1.png" alt="s1" class="s4">
+
+    <img src="./img/l-left.png" alt="ladder" class="l1">
+    <img src="./img/l.png" alt="ladder" class="l2">
+    <img src="./img/l-left.png" alt="ladder" class="l3">
+    <img src="./img/l.png" alt="ladder" class="l4">
+
+    <!-- dice playground -->
+        <div class="dice-container">
+            <div class="player-turn">
+                <div id="playerOne-turn">
+                    Player 1<ion-icon name="golf" class="pOne" id="one"></ion-icon>
+                </div>
+                <div id="playerTwo-turn">
+                    Player 2<ion-icon name="golf" class="pTwo" id="two"></ion-icon>
+                </div>
+            </div>
+            <img src="./img/d1.png" alt="dice" id="dice"> <!--dice image-->
+            <button id="rollDice" onclick="randomDice()">ROLL DICE</button>
+        </div>
+    <!-- startPoint -->
+    <div class="startCircle-container">
+            <div class="startPoint">START</div>
+            <ion-icon name="golf" id="pointOne"></ion-icon>
+            <ion-icon name="golf" id="pointTwo"></ion-icon>
+    </div>
 </body>
 </html>
