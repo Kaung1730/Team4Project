@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#page-container{
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood; /* to change color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.page-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(83, 16, 16);
+    margin-left: 55px;
+    margin-top: -60px;
+    padding: 10px 0px;
+    letter-spacing: 2px;
+}
+.img-wrap{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid rgb(83, 16, 16);
+    overflow: hidden;
+    background-color: burlywood;
+}
+#play{
+    margin: 20px 0px 0px 65px;
+    padding: 15px 75px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: transparent;
+    color: rgb(83, 16, 16);
+    border: 3px solid rgb(83, 16, 16);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#play:hover{
+    background-color: rgb(83, 16, 16);
+    color: burlywood;
+}
+/* nav */
+.score-container{
+    width: 100%;
+    height: 60px;
+    box-shadow: 5px 5px 5px gainsboro;
+    display: flex;
+    justify-content: space-between;
+}
+.game-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(83, 16, 16);
+    padding: 10px 0px 10px 5px;
+}
+.player{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+.player-one, .player-two{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(83, 16, 16);
+    padding: 15px 15px 10px 0px;
+}
+.pOne, .pTwo{
+    font-size: 25px;
+    padding-right: 5px;
+}
+.pOne{
+    color: blue;
+}
+.pTwo{
+    color: red;
+}
+/* board */
+#board{
+    width: 700px;
+    height: 700px;
+    margin: 50px auto;
+}
+td{
+    width: 70px;
+    height: 70px;
+    padding-left: 8px;
+}
+td:nth-child(even){
+    background-color: burlywood;
+}
+td:nth-child(odd){
+    background-color: thistle;
+}
+/* snake & ladder */
+img{
+    position: absolute;
+}
+.s1{
+    top: 21%;
+    left: 33%;
+    transform: skewX(20deg);
+}
+.s2{
+    top: 65%;
+    left: 49.5%;
+    transform:rotateY(180deg) skewX(10deg);
+}
+.s3{
+    top: 75%;
+    left: 25%;
+}
+.s4{
+    top: 32%;
+    left:53%;
+    height: 190px;
+    width: 150px;
+    transform:rotateY(180deg) skewX(10deg);
+}
+.l1{
+    top: 65%;
+    left:31.5%;
+    width: 80px;
+    height:170px;
+    transform: skewX(8deg);
+}
+.l2{
+    top: 63%;
+    left: 63.5%;
+    width: 120px;
+    height: 335px;
+    transform: skewX(-14deg);
+}
+.l3{
+    top: 21%;
+    left: 43%;
+    width: 120px;
+    height: 370px;
+    transform: skewX(13deg) skewY(16deg);
+}
+.l4{
+    top: 99.5%;
+    left:42.5%;
+    width: 80px;
+    height:150px;
+    transform: skewX(-12deg);
+}
+/* dice */
+.dice-container{
+    position: absolute;
+    top: 17%;
+    left: 12px;
+    width: 20%;
+    height: 250px;
+    border: 2px solid rgb(83, 16, 16);
+    border-radius: 5px;
+}
+.player-turn{
+    display: flex;
+    width: 100%;
+}
+.player-turn ion-icon{
+    padding-left: 2px;
+}
+#playerOne-turn{
+    background-color: blue;
+    color: white;
+}
+#one{
+    color: white;
+}
+#playerOne-turn, #playerTwo-turn{
+    width: 50%;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.dice-container img{
+    width: 30%;
+    position: relative;
+    left: 35%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+#rollDice{
+    padding: 12px 27px;
+    margin-left: -20px;
+    border: 2px solid rgb(83, 16, 16);
+    color: rgb(83, 16, 16);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor:pointer;
+}
+#rollDice:hover{
+    color: white;
+    background-color: rgb(83, 16, 16);
+}
+/* startCircle */
+.startCircle-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid rgb(83, 16, 16);
+    position: absolute;
+    left: 16%;
+    top: 112%;
+    text-align: center;
+}
+.startPoint{
+    font-size: 17px;
+    position: absolute;
+    top: 10%;
+    left: 23%;
+}
+#pointOne,#pointTwo{
+    font-size: 25px;
+    position: absolute;
+    left: 40%;
+}
+#pointOne{
+    top: 28%;
+    color: blue;
+}
+#pointTwo{
+    top: 46%;
+    color: red;
+}
+#p2{
+    display: none;
+}
