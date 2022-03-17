@@ -38,7 +38,7 @@ let playerOne = () => {
     console.log(currentDiceNum);
     currentPosition += currentDiceNum;
     console.log(currentPosition);
-    switch (90) { //currentPosition //
+    switch (99) { //currentPosition //
         case 1:
             document.getElementById("pointOne").style.left = "155px";
             // window.alert("1");
@@ -296,6 +296,7 @@ let playerOne = () => {
                 document.getElementById("pointOne").style.left = "320px";
                 document.getElementById("pointOne").style.top = "30px"; 
             }, 500);
+            currentPosition = 3;
             //window.alert("15");
             break;
         case 42:
@@ -339,13 +340,24 @@ let playerOne = () => {
                 document.getElementById("pointOne").style.top = "-480px";
                 document.getElementById("pointOne").style.left = "480px";
                 document.getElementById("pointOne").style.top = "-610px";
-                currentPosition = 46;
+                currentPosition = 96;
             }, 500);
             //window.alert("15");
             break;
         case 48:
             document.getElementById("pointOne").style.left = "720px";
             document.getElementById("pointOne").style.top = "-260px";
+            setTimeout(() => {
+                document.getElementById("pointOne").style.left = "690px";
+                document.getElementById("pointOne").style.top = "-150px";
+                document.getElementById("pointOne").style.left = "650px";
+                document.getElementById("pointOne").style.top = "-120px";
+                document.getElementById("pointOne").style.left = "620px";
+                document.getElementById("pointOne").style.top = "-60px";
+                document.getElementById("pointOne").style.left = "560px";
+                document.getElementById("pointOne").style.top = "28%";
+            }, 500);
+            currentPosition = 6;
             //window.alert("15");
             break;
         case 49:
@@ -559,44 +571,64 @@ let playerOne = () => {
             //window.alert("15");
             break;
         case 91:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "875px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 92:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "795px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 93:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "720px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 94:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "635px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 95:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "555px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 96:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "475px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 97:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "395px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 98:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "320px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
         case 99:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "245px";
+            document.getElementById("pointOne").style.top = "-615px";
+            setTimeout(() => {
+                document.getElementById("pointOne").style.left = "230px";
+            document.getElementById("pointOne").style.top = "-500px";
+            document.getElementById("pointOne").style.left = "330px";
+            document.getElementById("pointOne").style.top = "-430px";
+            document.getElementById("pointOne").style.left = "350px";
+            document.getElementById("pointOne").style.top = "-380px";
+            document.getElementById("pointOne").style.left = "475px";
+            document.getElementById("pointOne").style.top = "-330px";
+            }, 500);
+            //window.alert("15");
             break;
         case 100:
-            document.getElementById("pointOne").style.left = "";
-            window.alert("15");
+            document.getElementById("pointOne").style.left = "160px";
+            document.getElementById("pointOne").style.top = "-615px";
+            //window.alert("15");
             break;
     }
 }
