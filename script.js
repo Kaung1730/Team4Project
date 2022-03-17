@@ -38,7 +38,7 @@ let playerOne = () => {
     console.log(currentDiceNum);
     currentPosition += currentDiceNum;
     console.log(currentPosition);
-    switch (13) { //currentPosition //
+    switch (14) { //currentPosition //
         case 1:
             document.getElementById("pointOne").style.left = "145px";
             // window.alert("1");
@@ -52,26 +52,26 @@ let playerOne = () => {
             // window.alert("3");
             break;
         case 4:
-                document.getElementById("pointOne").style.left = "360px";
+            document.getElementById("pointOne").style.left = "360px";
             setTimeout(() => {
                 document.getElementById("pointOne").style.left = "355px";
-            document.getElementById("pointOne").style.top = "10%";
-            document.getElementById("pointOne").style.left = "360px";
-            document.getElementById("pointOne").style.top = "-10%";
-            document.getElementById("pointOne").style.left = "365px";
-            document.getElementById("pointOne").style.top = "-20%";
-            document.getElementById("pointOne").style.left = "370px";
-            document.getElementById("pointOne").style.top = "-30%";
-            document.getElementById("pointOne").style.left = "380px";
-            document.getElementById("pointOne").style.top = "-40%";
-            document.getElementById("pointOne").style.left = "385px";
-            document.getElementById("pointOne").style.top = "-65%";
-            document.getElementById("pointOne").style.left = "390px";
-            document.getElementById("pointOne").style.top = "-95%";
-            document.getElementById("pointOne").style.left = "420px";
-            document.getElementById("pointOne").style.top = "-120%";
+                document.getElementById("pointOne").style.top = "10%";
+                document.getElementById("pointOne").style.left = "360px";
+                document.getElementById("pointOne").style.top = "-10%";
+                document.getElementById("pointOne").style.left = "365px";
+                document.getElementById("pointOne").style.top = "-20%";
+                document.getElementById("pointOne").style.left = "370px";
+                document.getElementById("pointOne").style.top = "-30%";
+                document.getElementById("pointOne").style.left = "380px";
+                document.getElementById("pointOne").style.top = "-40%";
+                document.getElementById("pointOne").style.left = "385px";
+                document.getElementById("pointOne").style.top = "-65%";
+                document.getElementById("pointOne").style.left = "390px";
+                document.getElementById("pointOne").style.top = "-95%";
+                document.getElementById("pointOne").style.left = "420px";
+                document.getElementById("pointOne").style.top = "-120%";
             }, 500);
-            
+
             currentPosition = 25;
             console.log(currentPosition);
             break;
@@ -121,14 +121,15 @@ let playerOne = () => {
                 document.getElementById("pointOne").style.top = "-210px";
                 document.getElementById("pointOne").style.left = "870px";
                 document.getElementById("pointOne").style.top = "-270px";
-                document.getElementById("pointOne").style.left = "920px";
+                document.getElementById("pointOne").style.left = "810px";
+                document.getElementById("pointOne").style.top = "-330px";
+                document.getElementById("pointOne").style.left = "870px";
             }, 500);
             currentPosition = 51;
-            window.alert("13");
+            // window.alert("13");
             break;
-
         case 14:
-            document.getElementById("pointOne").style.left = "560px"
+            document.getElementById("pointOne").style.left = "620px"
             document.getElementById("pointOne").style.top = "-50px";
             window.alert("14");
             break;
@@ -179,175 +180,307 @@ let playerOne = () => {
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 25:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 26:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 27:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 28:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 29:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 30:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 31:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 32:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 33:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 34:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 35:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 36:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 37:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 38:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 39:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 40:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 41:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 42:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 43:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 44:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 45:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 46:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 47:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 48:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 49:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 50:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 51:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 52:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 53:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 54:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 55:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 56:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 57:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 58:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 59:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 60:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 61:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 62:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 63:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 64:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 65:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 66:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
-        case 15:
+        case 67:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 68:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 69:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 70:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 71:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 72:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 73:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 74:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 75:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 76:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 77:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 78:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 79:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 80:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 81:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 82:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 83:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 84:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 85:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 86:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 87:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 88:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 89:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 90:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 91:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 92:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 93:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 94:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 95:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 96:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 97:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 98:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 99:
+            document.getElementById("pointOne").style.left = "";
+            window.alert("15");
+            break;
+        case 100:
             document.getElementById("pointOne").style.left = "";
             window.alert("15");
             break;
