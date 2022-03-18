@@ -28,7 +28,7 @@ let randomDice = () => {
         document.getElementById("playerOne-turn").style.background = "white";
         document.getElementById("one").style.color = "blue";
         document.getElementById("playerOne-turn").style.color = "black";
-        playerTwo();
+        // playerTwo();
     }
     count++;
 }
