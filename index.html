@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Ladder</title>
+    <link rel="icon" href="./img/title-barlogo.jpg" type="image/png">
     <link rel="stylesheet" href="index.css">
     <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
-    <!-- <ion-icon name="golf-outline"></ion-icon> -->
-    <!-- Start Page Show -->
-    <div id="page-container">
-        <div class="page-text">
-            <div class="page-title">Snake & Ladder</div>
-            <div class="img-wrap">
-                <img src="./img/snakelogo.png" alt="logo">
-            </div>
-            <button id="play">PLAY</button>
-        </div>
-    </div>
     <!-- nav -->
     <div class="score-container">
         <div class="game-title">Snake & Ladder</div>
@@ -31,14 +25,15 @@
                 <span id="p1score">0</span>
             </div>
             <div class="player-two">
-                <ion-icon name="golf" class="pTwo"></ion-icon></ion-icon>Player 2 :
+                <ion-icon name="golf" class="pTwo"></ion-icon>
+                </ion-icon>Player 2 :
                 <span id="p2score">0</span>
             </div>
         </div>
     </div>
     <!-- Board -->
     <div id="board">
-        <table cellspacing="0px">
+        <table cellspacing="0px" cellpadding="100px">
             <tr>
                 <td id="100"></td>
                 <td id="99"></td>
@@ -172,23 +167,49 @@
         <img src="./img/l.png" alt="ladder" class="l4">
     </div>
     <!-- dice playground -->
-        <div class="dice-container">
-            <div class="player-turn">
-                <div id="playerOne-turn">
-                    Player 1<ion-icon name="golf" class="pOne" id="one"></ion-icon>
-                </div>
-                <div id="playerTwo-turn">
-                    Player 2<ion-icon name="golf" class="pTwo" id="two"></ion-icon>
-                </div>
+    <div class="dice-container">
+        <div class="player-turn">
+            <div id="playerOne-turn">
+                Player 1<ion-icon name="golf" class="pOne" id="one"></ion-icon>
             </div>
-            <img src="./img/d1.png" alt="dice" id="dice"> <!--dice image-->
-            <button id="rollDice" onclick="randomDice()">ROLL DICE</button>
+            <div id="playerTwo-turn">
+                Player 2<ion-icon name="golf" class="pTwo" id="two"></ion-icon>
+            </div>
         </div>
+        <img src="./img/d1.png" alt="dice" id="dice">
+        <!--dice image-->
+        <button id="rollDice" onclick="randomDice()">ROLL DICE</button>
+    </div>
     <!-- startPoint -->
     <div class="startCircle-container">
-            <div class="startPoint">START</div>
-            <ion-icon name="golf" id="pointOne"></ion-icon>
-            <ion-icon name="golf" id="pointTwo"></ion-icon>
+        <div class="startPoint">START</div>
+        <ion-icon name="golf" id="pointOne"></ion-icon>
+        <ion-icon name="golf" id="pointTwo"></ion-icon>
     </div>
+
+    <!-- Show box after win -->
+    <div id="opacity-page"></div>
+    <div id="win-box">
+        <div class="winner">Winner</div>
+        <div id="playerWinner">
+            <ion-icon name="star-outline" class="star"></ion-icon>
+            Player One
+            <ion-icon name="star-outline" class="star"></ion-icon>
+        </div>
+        <div id="medal-wrap1">
+            <ion-icon name="trophy-outline" id="medal1"></ion-icon>
+        </div>
+        <div id="medal-wrap2">
+            <ion-icon name="trophy-outline" id="medal2"></ion-icon>
+        </div>
+        <div class="choose-box">
+            <button id="home"> <a href="./home.html">Home</a></button>
+            <button id="continue"><a href="./index.html"> continue</a></button>
+        </div>
+    </div>
+    <!-- sound when user click roll dice & sound when user win -->
+    <audio src="./img/dice.wav" id="diceSound"></audio>
+    <audio src="./img/win.mp3" id="winSound"></audio>
 </body>
+
 </html>
