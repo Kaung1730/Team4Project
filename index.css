@@ -87,14 +87,24 @@ tr:last-child td {
     border-bottom: 1px solid black;
 }
 
-td:nth-child(even) {
-    background-color: burlywood;
+.color-Y{
+    background-color: yellow;
 }
-
-td:nth-child(odd) {
-    background-color: lightgreen;
+.color-O{
+    background-color: orange;
 }
-
+.color-R{
+    background-color: rgb(243, 79, 79);
+}
+.color-G1{
+    background-color: lawngreen;
+}
+.color-G2{
+    background-color: green;
+}
+.color-B{
+    background-color: lightskyblue;
+}
 /* snake & ladder */
 img {
     position: absolute;
