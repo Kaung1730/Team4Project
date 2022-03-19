@@ -1047,23 +1047,24 @@ let playerTwo = () => {
 let whoWin = () => {
     if (p1totalScore >= 100 && p2totalScore < 100) {
         // playerOneWin
+        finished = true;
         document.getElementById("winSound").play();
         document.getElementById("pointOne").style.left = "180%";
         document.getElementById("pointOne").style.top = "-650%";
         document.getElementById("opacity-page").style.display = "block";
         document.getElementById("win-box").style.display = "block";
-        document.getElementById("playerWinner").innerHTML = "Player One";
+        document.getElementById("winner").innerHTML = "Player One";
         document.getElementById("medal-wrap1").style.display = "block";
-        finished = true;
     } else if (p1totalScore < 100 && p2totalScore >= 100) {
         //playerTwoWin
+        finished = true;
         document.getElementById("windSound").play();
         document.getElementById("pointTwo").style.left = "180%";
         document.getElementById("pointTwo").style.top = "-650%";
         document.getElementById("opacity-page").style.display = "block";
         document.getElementById("win-box").style.display = "block";
-        document.getElementById("playerWinner").innerHTML = "Player Two";
+        document.getElementById("winner").innerHTML = "Player Two";
         document.getElementById("medal-wrap2").style.display = "block";
-        finished = true;
+        
     }
 }

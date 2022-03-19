@@ -75,7 +75,8 @@ td {
     text-align: center;
     border-top: 1px solid black;
     border-left: 1px solid black;
-    font-weight: bold;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 td:last-child {
@@ -333,7 +334,6 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
-
 a {
     text-decoration: none;
     color: rgb(83, 16, 16);
