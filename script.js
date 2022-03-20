@@ -611,7 +611,7 @@ let playerTwo = () => {
                 document.getElementById("pointTwo").style.top = "-340%";
                 document.getElementById("pointTwo").style.left = "1170%";
             }, 500);
-            p1currentPosition = 51;
+            p2currentPosition = 51;
             break;
         case 14:
             document.getElementById("pointTwo").style.left = "830%"
