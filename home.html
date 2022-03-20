@@ -23,10 +23,12 @@
             <button id="play"><a href="./index.html"> PLAY</a></button>
         </div>
         <!-- start sound  -->
-        <audio autoplay loop>
-            <source src="./img/start.mp3" type="audio/mp3">
-        </audio>
+            <audio src="./img/start.mp3" id="my_audio" loop="loop"></audio>
     </div>
+    <script  defer type="text/javascript">
+        window.onload=function(){
+          document.getElementById("my_audio").play();
+        }
+      </script>
 </body>
-
 </html>
